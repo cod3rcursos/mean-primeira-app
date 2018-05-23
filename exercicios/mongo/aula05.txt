@@ -1,0 +1,11 @@
+cls
+db.billingcycles.count()
+
+db.billingcycles.remove({month:2})
+db.billingcycles.count()
+
+db.billingcycles.remove({year:2017}, 1)
+db.billingcycles.count()
+
+db.dropDatabase()
+show dbs

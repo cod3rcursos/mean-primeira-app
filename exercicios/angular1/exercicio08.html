@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+  <head>
+    <meta charset="utf-8">
+    <title>Fundamentos de Angular</title>
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript">
+      angular.module('app', [])
+      angular.module('app').directive('myClock', function() {
+        return {
+          restrict: 'AE',
+          template: `<h2>${new Date}<h2>`
+        }
+      })
+    </script>
+  </head>
+  <body>
+    <h1>Atributo</h1>
+    <div my-clock></div>
+    <hr>
+    <h1>Elemento</h1>
+    <my-clock></my-clock>
+  </body>
+</html>

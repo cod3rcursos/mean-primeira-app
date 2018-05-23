@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+  <head>
+    <meta charset="utf-8">
+    <title>Fundamentos de Angular</title>
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript">
+      angular.module('app', [])
+    </script>
+  </head>
+  <body>
+    <h1>{{ value }}</h1>
+    <input name="name" ng-model="value" />
+  </body>
+</html>

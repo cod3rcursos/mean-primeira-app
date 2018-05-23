@@ -1,0 +1,17 @@
+cls
+db.billingcycles.update({
+  $and:[{
+    month: 1
+  }, {
+    year:2017
+  }]
+}, {
+  $set: {
+    credits:[{
+      name:"Salário",value:5000
+    }]
+  }
+})
+
+db.billingcycles.findOne()
+db.billingcycles.find({credits:{$exists:true}}, {_id:0, name:1}).pretty()

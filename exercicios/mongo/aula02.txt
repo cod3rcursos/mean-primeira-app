@@ -1,0 +1,23 @@
+cls
+show dbs
+use db_finance
+show collections
+
+db.billingcycles.insert({name:"Janeiro/17", month: 1, year: 2017})
+show collections
+show dbs
+
+db.billingcycles.save({name:"Fevereiro/17", month: 2, year: 2017})
+
+db.billingcycles.insert({
+  name:"Março/17",
+  month: 3,
+  year: 2017,
+  credits: [
+    {name: "Salário", value: 5000}
+  ],
+  debts: [
+    {name: "Luz", value: 100, status: "PAGO"},
+    {name: "Telefone", value: 100, status: "PENDENTE"}
+  ]
+})

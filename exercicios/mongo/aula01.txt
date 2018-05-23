@@ -1,0 +1,19 @@
+show dbs
+use db_finance
+db
+show dbs
+
+db.createCollection('billingCycles')
+show dbs
+show collections
+
+db.createCollection('billingcycles')
+show collections
+
+db.billingCycles.drop()
+show collections
+
+db.billingcycles.drop()
+show collections
+
+show dbs
