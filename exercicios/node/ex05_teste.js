@@ -1,2 +1,3 @@
-const outro = require('./ex05_module')
-outro.digaOi()
+const modulo = require('./ex05_module')
+
+modulo.digaOi()

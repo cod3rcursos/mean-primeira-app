@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='app'>
+<html ng-app='app' lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Fundamentos de Angular</title>
@@ -20,8 +20,9 @@
   <body>
     <div ng-controller="MeuController">
       <h1>{{ value }}</h1>
-      <input name="name" ng-model="value" />
-      <button type="button" name="button" ng-click="inc()">Inc</button>
+      <input ng-model="value"/>
+      <button ng-click="inc()">Inc</button>
     </div>
+
   </body>
 </html>

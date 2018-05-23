@@ -1,6 +1,7 @@
 const _ = require('lodash')
-const alunos = [{
-  nome: 'Joao',
+
+const alunos =[{
+  nome: 'João',
   nota: 7.6
 }, {
   nome: 'Maria',

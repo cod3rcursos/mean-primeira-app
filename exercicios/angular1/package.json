@@ -1,15 +1,15 @@
 {
-  "name": "exercicios_angular1",
+  "name": "exercicios_angular",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Paulo Victor",
   "license": "ISC",
   "dependencies": {
-    "angular": "^1.6.0"
+    "angular": "^1.6.10",
+    "angular5": "^1.0.0"
   }
 }

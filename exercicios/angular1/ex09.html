@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='app'>
+<html ng-app='app' lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Fundamentos de Angular</title>
@@ -10,14 +10,16 @@
         bindings: {
           id: '@',
           label: '@',
-          model: '@'
+          model: '='
         },
         template: `
-          <label for="{{ $ctrl.id }}">{{ $ctrl.label }}</label>
-          <input id="{{ $ctrl.id }}" ng-model='$ctrl.model'>
+        <label for="{{ $ctrl.id }}">{{ $ctrl.label }}</label>
+        <input id="{{ $ctrl.id }}" ng-model='$ctrl.model'>
+
         `
       })
-      angular.module('app').controller('MeuController', function() {
+
+      angular.module('app').controller('MeuController', function(){
         const self = this
         self.name = "Anônimo"
       })
@@ -27,6 +29,6 @@
     <div ng-controller="MeuController as ctrl">
       <h1>{{ ctrl.name }}</h1>
       <field id="nome" label="Nome" model="ctrl.name"></field>
-    </div>
+      </div>
   </body>
 </html>
